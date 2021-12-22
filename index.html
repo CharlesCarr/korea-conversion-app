@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Americans in Korea - Conversion Web App</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="top">
+            <div class="imgs">
+                <img id="USA" src="Flag_of_the_United_States.svg" alt="flagUSA">
+                <img id="SK" src="Flag_of_South_Korea.svg" alt="flagSK">
+                <span id="timeK"></span>
+                <span id="timeE"></span>
+            </div>
+            <div class="headers">
+                <header>
+                    <h1>Conversion Application for Americans in Korea </h1>
+                </header>
+            </div>
+            <!-- <img src="Flag_of_South_Korea.svg" alt="flagSK"> -->
+        </div>
+
+        <div class="subject_container">
+            <div class="weight_title">1) Weight Conversion: Kilogram (kg) to Pound (lb)</div>
+            <div class="weight">
+                Kilogram(s) <input type="number" class="kg" placeholder="Add a Weight in kg" maxlength="10"><br><br> =
+                <span class="final" id="lb"></span> lb
+                <button type="button" class="weight_btn">Convert</button>
+            </div>
+        </div>
+
+        <div class="subject_container">
+            <div class="temp_title">2) Temperature Conversion: Celsius (°C) to Fahrenheit (°F) </div>
+            <div class="weight">
+                Celsius <input type="number" class="cel" placeholder="Add a Temp in °C" maxlength="10"> =
+                <span class="final" id="fahrenheit"></span> °F
+                <button type="button" class="temp_btn">Convert</button>
+            </div>
+        </div>
+
+        <div class="subject_container">
+            <div class="speed_title">3) Speed Conversion: Kilometers per Hour (km/hr) to Miles per Hour (mph)</div>
+            <div class="speed">
+                Kilometers per Hour <input type="number" class="kmh" placeholder="Add a Speed in km/hr" maxlength="10"> =
+                <span class="final" id="mph"></span> mph
+                <button type="button" class="speed_btn">Convert</button>
+            </div>
+        </div>
+
+        <div class="subject_container">
+            <div class="height_title">4) Height Conversion: Meters (m) to Feet (ft) </div>
+            <div class="height">
+                Meters <input type="number" class="m" placeholder="Add a Height in m" maxlength="10"> =
+                <span class="final" id="ft"></span> ft
+                <button type="button" class="height_btn">Convert</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
